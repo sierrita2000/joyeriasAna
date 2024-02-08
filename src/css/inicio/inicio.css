@@ -1,0 +1,36 @@
+.tubo__anillos {
+    position: absolute;
+    bottom: 3rem;
+    height: 13rem;
+    width: 13rem;
+    z-index: 2;
+    animation: aparecer_anillo 2.5s ease-in-out .2s forwards,
+        mover_anillo 3s ease-in-out alternate infinite ;
+}
+
+@keyframes aparecer_anillo {
+    to {
+        bottom: 16rem;
+    }
+}
+
+@keyframes mover_anillo {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.tubo__anillos__foto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: calc(0%);
+    transition: all 1.2s ease-in-out;
+}
+
+.mostrado {
+    opacity: calc(100%);
+}

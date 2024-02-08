@@ -1,0 +1,36 @@
+.categoria__tarjeta {
+    height: 100%;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../../../caja_categoria.jpg') no-repeat;
+    background-size: 100% 100%;
+    padding: 0 3.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 4px solid black;
+}
+
+.categoria_imagen {
+    height: auto;
+    width: 90%;
+    margin: 4rem 0;
+    transition: all .5s ease-in-out;
+}
+
+.categoria__tarjeta h2 {
+    font-family: var(--sans);
+    font-size: 40px;
+    margin: 0 0 1.5rem;
+}
+
+.categoria_collar {
+    height: 60%;
+    margin: 0;
+}
+
+.categoria__tarjeta:hover .categoria_imagen {
+    transform: scale(1.2);
+}

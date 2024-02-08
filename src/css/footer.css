@@ -1,0 +1,56 @@
+.footer {
+    height: 10rem;
+    width: 100%;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+}
+
+.footer div {
+    width: 100%;
+}
+
+.redes,
+.correo,
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes i {
+    margin: 0 1rem;
+    font-size: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.redes i:hover {
+    transform: scale(1.2);
+}
+
+.logo .logo__logo {
+    height: 30rem;
+    width: 30rem;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 30px solid rgba(128, 128, 128, 0.685);
+    border-radius: 50%;
+    transform: translateX(5rem);
+    font-family: var(--sans);
+    font-size: 70px;
+    color: rgba(128, 128, 128, 0.685);
+    background-color: rgb(105, 105, 105, 0.4);
+}
+
+.correo p {
+    font-family: var(--tongerine);
+    font-size: 50px;
+    color: whitesmoke;
+}
